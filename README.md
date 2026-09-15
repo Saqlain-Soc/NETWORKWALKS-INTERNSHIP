@@ -2,23 +2,38 @@
 
 # 🔐 Cybersecurity Lab Environment Setup
 
-**Building an isolated virtual lab for penetration testing and ethical hacking practice**
+**Building a controlled virtual lab environment for cybersecurity testing and ethical hacking practice**
+
 </div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Ver-Virtualbox%20v7.2-0070C0?style=flat-square&labelColor=000000" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-v2026.2-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hypervisor-VMware%20Workstation%20Pro-0070C0?style=flat-square&labelColor=000000&logo=vmware&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kali%20Linux-Cybersecurity%20VM-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/Skill-Linux-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Network-10.0.0.0%2F24-238F89?style=flat-square&labelColor=000000" />
-  <img src="https://img.shields.io/badge/Penetration%20Testing-C00000?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Network-VMnet8%20NAT-238F89?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/IP-192.168.80.131-0070C0?style=flat-square&labelColor=000000" />
   <img src="https://img.shields.io/badge/Skill-Virtualization-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/Shared%20Folder-downloads-238F89?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Penetration%20Testing-C00000?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-404040?style=flat-square&labelColor=0070C0&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-404040?style=flat-square&labelColor=C00000&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/NetworkWalks-404040?style=flat-square&labelColor=C00000" />
   <img src="https://img.shields.io/badge/Ethical%20Hacking-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/Waqas%20Karim%20CCIE-C00000?style=flat-square" />
 </p>
+
+---
+
+## 📌 Project Overview
+
+This project was completed as part of the **NETWORKWALKS Cybersecurity Internship – WK1-PM1**.
+
+The objective was to set up a controlled cybersecurity testing environment using **VMware Workstation Pro** and **Kali Linux**, with networking, Internet connectivity, shared-folder access, clipboard/drag-and-drop functionality, and a recovery snapshot configured and tested.
+
+> **Lab Platform:** VMware Workstation Pro
+> **Security VM:** Kali Linux
+> **Network:** VMware VMnet8 NAT
+> **Kali IP:** `192.168.80.131/24`
 
 
 # 🔐 Cybersecurity Lab Environment Setup
