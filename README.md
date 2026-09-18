@@ -1,171 +1,135 @@
-# 🔐 NETWORKWALKS Cybersecurity Internship
+# NetworkWalks Cybersecurity Internship
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Internship-Cybersecurity-blue?style=for-the-badge" alt="Cybersecurity Internship">
-  <img src="https://img.shields.io/badge/NetworkWalks-Internship-green?style=for-the-badge" alt="NetworkWalks">
-  <img src="https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge" alt="Status">
-</p>
+![Status](https://img.shields.io/badge/status-active-2ea44f?style=flat-square)
+![Focus](https://img.shields.io/badge/focus-cybersecurity-1f6feb?style=flat-square)
+![Platform](https://img.shields.io/badge/platform-Kali%20Linux%20%7C%20Windows-333333?style=flat-square)
+![Weeks](https://img.shields.io/badge/progress-week%2002%20of%204%2B-8250df?style=flat-square)
 
-<p align="center">
-  <b>Hands-on Cybersecurity Learning & Practical Experience</b>
-</p>
+Hands-on documentation of my cybersecurity internship with NetworkWalks — practical labs, technical tasks, and key learnings from each week of the program.
 
 ---
 
-## 📌 About This Repository
+## About
 
-This repository documents my **Cybersecurity Internship with NetworkWalks**, including hands-on labs, practical assignments, technical tasks, screenshots, troubleshooting activities, and key learnings throughout the internship.
-
-The purpose of this repository is to maintain a structured record of my practical cybersecurity experience and demonstrate my technical growth through real-world security exercises.
+This repository is a structured record of my practical work during the internship. Each week's folder contains the tasks completed, commands used, findings, and supporting evidence (screenshots, output files, reports).
 
 ---
 
-## 🎯 Internship Focus Areas
+## Focus Areas
 
-| Area                        | Focus                                                             |
-| --------------------------- | ----------------------------------------------------------------- |
-| 🌐 Network Security         | Network configuration, security concepts and secure communication |
-| 🔍 Vulnerability Assessment | Identifying and understanding security weaknesses                 |
-| 🛡️ Penetration Testing     | Practical security testing and assessment                         |
-| 🚨 Security Operations      | Monitoring, detection and security analysis                       |
-| 🆘 Incident Response        | Understanding and responding to security incidents                |
-| 🔎 Digital Forensics        | Investigation and analysis of digital evidence                    |
-| 📊 Risk Assessment          | Identifying, analyzing and managing security risks                |
-
----
-
-## 🧰 Technologies & Tools
-
-Throughout the internship, I will work with cybersecurity concepts, operating systems, networking technologies, security tools and practical lab environments.
-
-| Category             | Technologies / Tools                                          |
-| -------------------- | ------------------------------------------------------------- |
-| 💻 Operating Systems | Kali Linux, Windows                                           |
-| 🌐 Networking        | TCP/IP, IP Addressing, Network Configuration                  |
-| 🔐 Cybersecurity     | Network Security, Vulnerability Assessment, Incident Response |
-| 🧪 Testing           | Security Testing & Practical Labs                             |
-| 📂 Documentation     | GitHub, Markdown                                              |
-| 🖥️ Virtualization   | VMware                                                        |
-
-> Tools and technologies will be added as I progress through the internship.
+| Area | Description |
+|---|---|
+| Network Security | Network configuration, security concepts, secure communication |
+| Vulnerability Assessment | Identifying and analyzing security weaknesses |
+| Penetration Testing | Practical, hands-on security testing |
+| Security Operations | Monitoring, detection, and log-based analysis |
+| Incident Response | Understanding and responding to security incidents |
+| Digital Forensics | Investigation and analysis of digital evidence |
+| Risk Assessment | Identifying, analyzing, and managing security risk |
 
 ---
 
-## 📁 Repository Structure
+## Tools & Technologies
 
-```text
+| Category | Tools |
+|---|---|
+| Operating Systems | Kali Linux, Windows |
+| Networking | TCP/IP, IP addressing, network configuration |
+| Reconnaissance | whois, whatweb, nslookup, curl, wafw00f, dnsrecon |
+| Scanning | Zenmap (Nmap GUI) |
+| Virtualization | VMware |
+| Documentation | Git, Markdown |
+
+*This list will grow as the internship progresses.*
+
+---
+
+## Repository Structure
+
+```
 NETWORKWALKS-INTERNSHIP/
-│
 ├── README.md
-│
 ├── Week-01/
-│   ├── README.md
-│   ├── 01-kali-vm.png
-│   ├── 02-network-adapter.png
-│   ├── 03-kali-ip.png
-│   ├── 04-internet-test.png
-│   ├── 05-shared-folder.png
-│   ├── 06-shared-folder-kali.png
-│   ├── 07-clipboard-dragdrop.png
-│   └── 08-snapshot.png
-│
-├── Week-02/
 │   └── README.md
-│
+├── Week-02/
+│   ├── README.md
+│   ├── PM1-Footprinting-Reconnaissance/
+│   │   └── README.md
+│   └── PM5-Network-Scanning-Zenmap/
+│       └── README.md
 └── Week-03/
     └── README.md
 ```
 
 ---
 
-## 📈 Internship Progress
+## Progress
 
-| Week     | Status      | Documentation               |
-| -------- | ----------- | --------------------------- |
-| Week 01  | ✅ Completed | Lab Setup & Practical Tasks |
-| Week 02  | ⏳ Upcoming  | To be documented            |
-| Week 03  | ⏳ Upcoming  | To be documented            |
-| Week 04+ | ⏳ Upcoming  | To be documented            |
-
-> This table will be updated as the internship progresses.
+| Week | Status | Summary |
+|---|:---:|---|
+| Week 01 | ✅ Completed | Kali Linux lab setup, network configuration, VMware integration |
+| Week 02 | ✅ Completed | Footprinting & reconnaissance (PM1), network scanning with Zenmap (PM5) |
+| Week 03 | 🔄 In progress | — |
+| Week 04+ | ⏳ Not started | — |
 
 ---
 
-## 🧠 Learning Objectives
+## Weekly Breakdown
 
-During this internship, my objectives are to:
+### Week 01 — Lab Setup & Environment Preparation
 
-* Build practical cybersecurity skills
-* Strengthen networking and security fundamentals
-* Gain hands-on experience with security tools
-* Understand vulnerability assessment methodologies
-* Develop security monitoring and incident-response skills
-* Practice documenting technical findings
-* Build a professional cybersecurity portfolio
-* Apply theoretical knowledge in practical lab environments
+Kali Linux VM setup, network adapter configuration, IP configuration, internet connectivity testing, shared folder setup, and VM snapshotting.
 
----
+**→ [View Week 01](./Week-01/)**
 
-## 📚 Documentation
+### Week 02 — Footprinting, Reconnaissance & Scanning
 
-Each week's folder contains the relevant practical work, screenshots, tasks, and learning notes.
+| Module | Task | Target | Result |
+|---|---|---|---|
+| PM1 | Footprinting & Reconnaissance | networkwalks.com | Domain, hosting, DNS, and WAF profile mapped using 6 tools |
+| PM5 | Network Scanning with Zenmap | 192.168.80.0/24 | 3 live hosts discovered, IP/MAC mapped, topology generated |
 
-### 🔹 Week 01
+**→ [View PM1](./Week-02/PM1-Footprinting-Reconnaissance/)**
+**→ [View PM5](./Week-02/PM5-Network-Scanning-Zenmap/)**
 
-**Lab Setup & Environment Preparation**
+### Week 03
 
-Includes:
-
-* Kali Linux virtual machine setup
-* Network adapter configuration
-* IP configuration
-* Internet connectivity testing
-* Shared folder configuration
-* VMware integration features
-* VM snapshot configuration
-
-👉 [View Week 01](./Week-01/)
-
-### 🔹 Week 02
-
-**Coming Soon**
-
-### 🔹 Week 03
-
-**Coming Soon**
+*Coming soon.*
 
 ---
 
-## ⚠️ Disclaimer
+## Objectives
 
-All activities documented in this repository are performed for **educational, authorized, and internship purposes** within controlled lab environments.
-
-No unauthorized systems, networks, accounts, or data are targeted.
+- Build practical cybersecurity skills
+- Strengthen networking and security fundamentals
+- Gain hands-on experience with industry-standard tools
+- Understand vulnerability assessment methodology
+- Develop clear, analyst-style technical documentation habits
+- Apply theoretical knowledge in real lab environments
 
 ---
 
-## 👨‍💻 Author
+## Disclaimer
+
+All activities in this repository were performed for educational and authorized internship purposes, within controlled lab environments. No unauthorized systems, networks, or data were targeted.
+
+---
+
+## Author
 
 **Saqlain Abbas**
+Software Engineering Student · Aspiring SOC Analyst
 
-🎓 Software Engineering Student
-🔐 Cybersecurity Enthusiast
-🛡️ Aspiring SOC Analyst
-
-### 🔗 Connect
-
-* GitHub: [Saqlain-Soc](https://github.com/Saqlain-Soc)
-
----
-
-## ⭐ Repository Status
-
-This repository is **actively maintained** and will be updated throughout my NetworkWalks Cybersecurity Internship.
-
-**Learning → Practicing → Documenting → Improving** 🚀
-
----
-
-<p align="center">
-  <b>🔐 Keep Learning. Keep Practicing. Keep Securing. 🚀</b>
+<p align="left">
+  <a href="https://github.com/Saqlain-Soc">
+    <img src="https://img.shields.io/badge/GitHub-Saqlain--Soc-181717?style=flat-square&logo=github&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com/in/saqlain-abbas-a61b59414">
+    <img src="https://img.shields.io/badge/LinkedIn-Saqlain%20Abbas-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
+  </a>
 </p>
+
+---
+
+*This repository is actively maintained and updated throughout the internship.*
