@@ -73,7 +73,7 @@ whois networkwalks.com
 
 **📸 Evidence:** `01-whois.png` · `01-whois.txt`
 
----
+![01-whois](01-whois.png)
 
 ### 4.2 — whatweb
 
