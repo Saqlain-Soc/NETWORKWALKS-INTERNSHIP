@@ -1,57 +1,55 @@
+# Network Scanning Report
 
-# 🔎 NETWORK SCANNING REPORT
+![Focus](https://img.shields.io/badge/focus-cybersecurity-1f6feb?style=flat-square)
+![Tool](https://img.shields.io/badge/tool-Zenmap-8250df?style=flat-square)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square)
+![Status](https://img.shields.io/badge/status-completed-2ea44f?style=flat-square)
 
-![Cybersecurity](https://img.shields.io/badge/Focus-Cybersecurity-blue)
-![Zenmap](https://img.shields.io/badge/Tool-Zenmap-red)
-![Windows](https://img.shields.io/badge/Platform-Windows-0078D6)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+Network scanning and host discovery using Zenmap.
 
-Network Scanning & Host Discovery with Zenmap
-
-*WEEK 02 | PM5 | NETWORK SCANNING WITH ZENMAP*
-
----
-
-## 🔹 Assessment Overview
-
-| **Field** | **Details** |
-| :--- | :--- |
-| 👨‍💻 **Intern** | **Saqlain Abbas** |
-| 🎓 **Program / Batch** | **NETWORKWALKS Cybersecurity Internship** |
-| 🧪 **Module** | **Week 02 — PM5: Network Scanning with Zenmap** |
-| 🎯 **Target Subnet** | **192.168.80.0/24 (VMware VMnet8 NAT)** |
-| 🔐 **Authorization** | ✅ **Authorized Internship Task** |
-| 🛰️ **Phase** | **Scanning & Network Discovery** |
-| 📌 **Assessment Type** | **Authorized Network Reconnaissance** |
-| ✅ **Status** | **Completed** |
+*NetworkWalks Cybersecurity Internship — Week 02, PM5*
 
 ---
 
-## 1. ⚠️ Liability Disclaimer
+## Assessment Overview
+
+| Field | Details |
+|---|---|
+| Intern | Saqlain Abbas |
+| Program | NetworkWalks Cybersecurity Internship |
+| Module | Week 02 — PM5: Network Scanning with Zenmap |
+| Target Subnet | 192.168.80.0/24 (VMware VMnet8 NAT) |
+| Authorization | Authorized internship task |
+| Phase | Scanning & network discovery |
+| Status | Completed |
+
+---
+
+## Disclaimer
 
 All activities were performed for educational purposes on my own local VMware NAT network (`192.168.80.0/24`), which is entirely under my control. No external or unauthorized networks were scanned.
 
 ---
 
-## 2. 📖 Introduction
+## Introduction
 
-This report covers network scanning and host discovery using **Zenmap** (the GUI for Nmap) as part of Week 02 of the NETWORKWALKS Cybersecurity Internship. The objective was to install Zenmap on Windows, identify the local subnet, and perform authorized host discovery to identify active devices on the network.
-
----
-
-## 🛠️ 3. Tools Used
-
-| **Tool** | **Purpose** |
-| :--- | :--- |
-| 💻 **Windows CMD** | Identify local network configuration |
-| 🛰️ **Zenmap (Nmap GUI)** | Discover live hosts and network devices |
+This report covers network scanning and host discovery using Zenmap (the GUI for Nmap) as part of Week 02 of the NetworkWalks Cybersecurity Internship. The objective was to install Zenmap on Windows, identify the local subnet, and perform authorized host discovery to identify active devices on the network.
 
 ---
 
-## 🖥️ 4. Lab Environment
+## Tools Used
 
-| **Component** | **Details** |
-| :--- | :--- |
+| Tool | Purpose |
+|---|---|
+| Windows CMD | Identify local network configuration |
+| Zenmap (Nmap GUI) | Discover live hosts and network devices |
+
+---
+
+## Lab Environment
+
+| Component | Details |
+|---|---|
 | Host OS | Windows |
 | Hypervisor | VMware Workstation |
 | Network | VMware VMnet8 NAT |
@@ -61,134 +59,136 @@ This report covers network scanning and host discovery using **Zenmap** (the GUI
 
 ---
 
-## 🔍 5. Tasks Completed
+## Tasks Completed
 
-### 5.1 — Zenmap Installation
+### 1. Zenmap Installation
 
 Zenmap was downloaded from the official source ([nmap.org/download.html](https://nmap.org/download.html)) and installed successfully on Windows.
 
 ---
 
-### 5.2 — Local IP & Subnet Identification
+### 2. Local IP & Subnet Identification
 
-**Command executed:**
+**Command:**
 ```cmd
 ipconfig
 ```
 
 **Result:**
 
-| **Field** | **Value** |
-| :--- | :--- |
+| Field | Value |
+|---|---|
 | VMware Network Adapter | VMnet8 → 192.168.80.1 |
 | Subnet Mask | 255.255.255.0 |
 | Target Subnet | 192.168.80.0/24 |
 
-**📸 Evidence:** `01-ipconfig.png`
+**Evidence:**
+
+![ipconfig output](01-ipconfig.png)
 
 ---
 
-### 5.3 & 5.4 — Live Host Discovery
+### 3. Live Host Discovery
 
-| **Field** | **Value** |
-| :--- | :--- |
+| Field | Value |
+|---|---|
 | Target | 192.168.80.0/24 |
 | Profile | Ping scan |
 | Command | `nmap -sn 192.168.80.0/24` |
-| Live Hosts Found | **3** |
+| Live Hosts Found | 3 |
 
-**📸 Evidence:** `02-zenmap-ping-scan.png` · `Output.png`
+**Evidence:**
 
----
-
-### 5.5 — IP Addresses of Live Hosts
-
-| **IP Address** | **Role** |
-| :---: | :--- |
-| `192.168.80.1` | Gateway / Host |
-| `192.168.80.131` | Kali Linux VM |
-| `192.168.80.254` | VMware Virtual Host |
+![Zenmap ping scan](02-zenmap-ping-scan.png)
 
 ---
 
-### 5.6 — MAC Addresses of Live Hosts
+### 4. IP Addresses of Live Hosts
 
-| **IP Address** | **MAC Address** | **Vendor** |
-| :---: | :---: | :--- |
-| `192.168.80.131` | 00:0C:29:71:83:FF | VMware |
-| `192.168.80.254` | 00:50:56:FF:90:18 | VMware |
-| `192.168.80.1` | (Gateway) | — |
-
-**📸 Evidence:** `03-hosts-list.png` · `Output.png`
+| IP Address | Role |
+|:---:|---|
+| 192.168.80.1 | Gateway / Host |
+| 192.168.80.131 | Kali Linux VM |
+| 192.168.80.254 | VMware Virtual Host |
 
 ---
 
-### 5.7 — Network Topology
+### 5. MAC Addresses of Live Hosts
 
-The Topology view was generated and saved as PDF.
+| IP Address | MAC Address | Vendor |
+|:---:|:---:|---|
+| 192.168.80.131 | 00:0C:29:71:83:FF | VMware |
+| 192.168.80.254 | 00:50:56:FF:90:18 | VMware |
+| 192.168.80.1 | (Gateway) | — |
 
-**📸 Evidence:** `04-topology.png` · `Topology.pdf`
+**Evidence:**
+
+![Host list](03-hosts-list.png)
 
 ---
 
-## 📊 6. Summary
+### 6. Network Topology
 
-| **Item** | **Result** |
-| :--- | :--- |
+The topology view was generated and saved as a PDF.
+
+**Evidence:**
+
+![Network topology](04-topology.png)
+
+Full topology export: [Topology.pdf](Topology.pdf)
+
+---
+
+## Summary
+
+| Item | Result |
+|---|---|
 | Live Hosts | 3 |
 | Live IPs | 192.168.80.1, .131, .254 |
 | Scan Duration | ~9.82 seconds |
-| Topology Saved | ✅ Yes (PDF) |
+| Topology Saved | Yes (PDF) |
 
 ---
 
-## 🧠 7. Key Learnings
+## Key Learnings
 
-* Zenmap makes Nmap easier to use through a **graphical interface**.
-* Ping scan (`-sn`) is useful for **quick host discovery** without port scanning.
-* MAC addresses help identify **virtual machines** (VMware vendor prefixes).
-* Topology view gives a **visual map** of the network layout.
-* Scanning should always be limited to **your own authorized lab network**.
-
----
-
-## ✅ 8. Conclusion
-
-During Week 02 of the NETWORKWALKS Cybersecurity Internship, I used Zenmap/Nmap to perform network discovery on my local VMware NAT subnet. The scan identified **3 live hosts** and provided details such as IP addresses, MAC addresses, and network topology. This practical strengthened my understanding of **host discovery, network mapping, and the scanning phase** of an authorized security assessment.
+- Zenmap makes Nmap easier to use through a graphical interface.
+- Ping scan (`-sn`) is useful for quick host discovery without port scanning.
+- MAC addresses help identify virtual machines (VMware vendor prefixes).
+- Topology view gives a visual map of the network layout.
+- Scanning should always be limited to your own authorized lab network.
 
 ---
 
-## 📊 9. Project Summary
+## Conclusion
 
-| **Category** | **Details** |
-| :--- | :--- |
-| **Project** | NETWORKWALKS Internship — Week 02, PM5 |
-| **Focus** | Network Scanning & Host Discovery |
-| **Tool** | Zenmap / Nmap |
-| **Target Network** | 192.168.80.0/24 |
-| **Live Hosts Identified** | **3** |
-| **Status** | **Completed** |
+During Week 02 of the NetworkWalks Cybersecurity Internship, I used Zenmap/Nmap to perform network discovery on my local VMware NAT subnet. The scan identified 3 live hosts and provided details such as IP addresses, MAC addresses, and network topology. This practical strengthened my understanding of host discovery, network mapping, and the scanning phase of an authorized security assessment.
 
 ---
 
-## 👤 Author
+## Evidence Index
 
-### Saqlain Abbas
+| # | File | Description |
+|---|---|---|
+| 1 | `01-ipconfig.png` | Local IP/subnet identification via CMD |
+| 2 | `02-zenmap-ping-scan.png` | Zenmap ping scan results |
+| 3 | `03-hosts-list.png` | IP/MAC address list of live hosts |
+| 4 | `04-topology.png` | Network topology view |
+| 5 | `Topology.pdf` | Full topology export |
 
-**🔐 Cybersecurity Intern — NETWORKWALKS**
+---
 
-> `Learning → Building → Testing → Securing`
+## Author
 
-This repository forms part of my practical cybersecurity internship portfolio and documents my hands-on laboratory exercises.
+**Saqlain Abbas**
+Cybersecurity Intern — NetworkWalks
 
-<p align="center">
-  <a href="https://linkedin.com/in/saqlain-abbas-a61b59414">
-    <img src="https://img.shields.io/badge/🔵_LinkedIn-Professional%20Profile-0A66C2?style=for-the-badge" />
+<p align="left">
+  <a href="https://github.com/Saqlain-Soc">
+    <img src="https://img.shields.io/badge/GitHub-Saqlain--Soc-181717?style=flat-square&logo=github&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://github.com/Saqlain-Soc">
-    <img src="https://img.shields.io/badge/⚫_GitHub-Security%20Projects-181717?style=for-the-badge" />
+  <a href="https://linkedin.com/in/saqlain-abbas-a61b59414">
+    <img src="https://img.shields.io/badge/LinkedIn-Saqlain%20Abbas-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
 </p>
-
----
