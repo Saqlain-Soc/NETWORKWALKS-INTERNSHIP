@@ -125,7 +125,7 @@ Software Engineering Student · Aspiring SOC Analyst
     <img src="https://img.shields.io/badge/GitHub-Saqlain--Soc-181717?style=flat-square&logo=github&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://linkedin.com/in/saqlain-abbas-a61b59414">
+  <a href="https://linkedin.com/in/saqlain-abbas-498516345">
     <img src="https://img.shields.io/badge/LinkedIn-Saqlain%20Abbas-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
 </p>
