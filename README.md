@@ -1,3 +1,11 @@
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&pause=1000&color=1E90FF&center=true&vCenter=true&width=700&lines=NetworkWalks" alt="NetworkWalks"/>
+  <br/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Cybersecurity+Internship" alt="Cybersecurity Internship"/>
+</div>
+
+<br/>
+
 # NetworkWalks Cybersecurity Internship
 
 ![Status](https://img.shields.io/badge/status-active-2ea44f?style=flat-square)
