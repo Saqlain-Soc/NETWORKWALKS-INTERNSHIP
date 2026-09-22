@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/status-active-2ea44f?style=flat-square)
 ![Focus](https://img.shields.io/badge/focus-cybersecurity-1f6feb?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Kali%20Linux%20%7C%20Windows-333333?style=flat-square)
-![Weeks](https://img.shields.io/badge/progress-week%2002%20of%204%2B-8250df?style=flat-square)
+![Weeks](https://img.shields.io/badge/progress-week%2003%20of%204%2B-8250df?style=flat-square)
 
 Hands-on documentation of my cybersecurity internship with NetworkWalks — practical labs, technical tasks, and key learnings from each week of the program.
 
@@ -37,6 +37,7 @@ This repository is a structured record of my practical work during the internshi
 | Networking | TCP/IP, IP addressing, network configuration |
 | Reconnaissance | whois, whatweb, nslookup, curl, wafw00f, dnsrecon |
 | Scanning | Zenmap (Nmap GUI) |
+| Password Cracking | John the Ripper, Johnny GUI, NetworkWalks Hash Calculator, NetworkWalks Password Cracker |
 | Virtualization | VMware |
 | Documentation | Git, Markdown |
 
@@ -57,7 +58,13 @@ NETWORKWALKS-INTERNSHIP/
 │   │   └── README.md
 │   └── PM5-Network-Scanning-Zenmap/
 │       └── README.md
-└── Week-03/
+├── Week-03/
+│   ├── README.md
+│   ├── PM1-Password-Cracking-JTR/
+│   │   └── README.md
+│   └── PM2-Password-Cracking-NW-Tools/
+│       └── README.md
+└── Week-04/
     └── README.md
 ```
 
@@ -69,7 +76,7 @@ NETWORKWALKS-INTERNSHIP/
 |---|:---:|---|
 | Week 01 | ✅ Completed | Kali Linux lab setup, network configuration, VMware integration |
 | Week 02 | ✅ Completed | Footprinting & reconnaissance (PM1), network scanning with Zenmap (PM5) |
-| Week 03 | 🔄 In progress | — |
+| Week 03 | ✅ Completed | Password cracking with JTR (PM1), password cracking with NetworkWalks tools (PM2) |
 | Week 04+ | ⏳ Not started | — |
 
 ---
@@ -92,7 +99,16 @@ Kali Linux VM setup, network adapter configuration, IP configuration, internet c
 **→ [View PM1](./Week-02/PM1-Footprinting-Reconnaissance/)**
 **→ [View PM5](./Week-02/PM5-Network-Scanning-Zenmap/)**
 
-### Week 03
+### Week 03 — Password Cracking
+
+| Module | Task | Tool | Result |
+|---|---|---|---|
+| PM1 | Password Cracking with JTR | John the Ripper + Johnny GUI | Password recovered, flag captured |
+| PM2 | Password Cracking with NetworkWalks Tools | Hash Calculator + Password Cracker | Password recovered, flag captured |
+
+**→ [View Week 03](./Week-03/)**
+
+### Week 04
 
 *Coming soon.*
 
