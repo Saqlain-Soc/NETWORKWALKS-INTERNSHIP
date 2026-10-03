@@ -11,7 +11,7 @@
 ![Status](https://img.shields.io/badge/status-active-2ea44f?style=flat-square)
 ![Focus](https://img.shields.io/badge/focus-cybersecurity-1f6feb?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Kali%20Linux%20%7C%20Windows-333333?style=flat-square)
-![Weeks](https://img.shields.io/badge/progress-week%2003%20of%204%2B-8250df?style=flat-square)
+![Weeks](https://img.shields.io/badge/progress-week%2004%20of%204%2B-8250df?style=flat-square)
 
 Hands-on documentation of my cybersecurity internship with NetworkWalks — practical labs, technical tasks, and key learnings from each week of the program.
 
@@ -46,6 +46,7 @@ This repository is a structured record of my practical work during the internshi
 | Reconnaissance | whois, whatweb, nslookup, curl, wafw00f, dnsrecon |
 | Scanning | Zenmap (Nmap GUI) |
 | Password Cracking | John the Ripper, Johnny GUI, NetworkWalks Hash Calculator, NetworkWalks Password Cracker |
+| Web App Pentesting | curl, qpdf, pdf2john, pdftotext, manual SQL injection testing |
 | Virtualization | VMware |
 | Documentation | Git, Markdown |
 
@@ -73,7 +74,10 @@ NETWORKWALKS-INTERNSHIP/
 │   └── PM2-Password-Cracking-NW-Tools/
 │       └── README.md
 └── Week-04/
-    └── README.md
+    ├── README.md
+    └── mediroza-pentest/
+        ├── README.md
+        └── screenshots/
 ```
 
 ---
@@ -85,7 +89,7 @@ NETWORKWALKS-INTERNSHIP/
 | Week 01 | ✅ Completed | Kali Linux lab setup, network configuration, VMware integration |
 | Week 02 | ✅ Completed | Footprinting & reconnaissance (PM1), network scanning with Zenmap (PM5) |
 | Week 03 | ✅ Completed | Password cracking with JTR (PM1), password cracking with NetworkWalks tools (PM2) |
-| Week 04+ | ⏳ Not started | — |
+| Week 04 | ✅ Completed | Black-box web app pentest on Mediroza General Hospital — SQL injection, auth bypass, PDF decryption, database exposure |
 
 ---
 
@@ -116,9 +120,18 @@ Kali Linux VM setup, network adapter configuration, IP configuration, internet c
 
 **→ [View Week 03](./Week-03/)**
 
-### Week 04
+### Week 04 — Web Application Penetration Testing
 
-*Coming soon.*
+Authorized black-box penetration test against a simulated hospital web application (Mediroza General Hospital), covering reconnaissance through to a full findings report.
+
+| Milestone | Task | Result |
+|---|---|---|
+| M1 | Initial access — recon, username enumeration, SQL injection, authentication bypass | 3 confidential lab reports retrieved via auth bypass (`admin'--`) |
+| M2 | PDF encryption recovery | All 3 encrypted reports decrypted and verified |
+| M3 | Critical data exposure | Public SQL backup exposed staff salary and shareholder data |
+| M4 | Professional pentest report | Full findings, risk ratings, and remediation documented |
+
+**→ [View Week 04](./Week-04/mediroza-pentest/)**
 
 ---
 
